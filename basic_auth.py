@@ -3,13 +3,14 @@ import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-
+# from selenium.webdriver.common.by import By
+    
 CHROME_PATH = '/home/my/Downloads/chromedriver-linux64/chromedriver'
 # TARGET_WEB_PAGE = 'https://the-internet.herokuapp.com/'
 TARGET_WEB_PAGE = 'http://admin:admin@the-internet.herokuapp.com/basic_auth'
 
 service = Service(CHROME_PATH)
+
 options = Options()
 options.add_argument('--headless')
 
